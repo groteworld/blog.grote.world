@@ -211,7 +211,7 @@ a:hover {
     }
 
     img {
-      transform: translateX(-40%) rotate(4deg);
+      transform: translateX(-40%) translateY(10px) rotate(3.5deg);
       box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
     }
   }
