@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="card-nav"></div>
+
+<div class="blog-card">
+    <div class="card-title"><span>Table of Contents</span></div>
+    <div class="card-content">
+        <ul>
+        {% for post in site.posts %}
+            <li class="big-title">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>
+<div class="card-note">
+    Welcome! Check out some of these tidbits of programming that I found interesting.
+</div>

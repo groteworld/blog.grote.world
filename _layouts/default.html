@@ -1,0 +1,22 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+    <head>
+        {% include head.html %}
+    </head>
+    <body>
+        <div class="blog">
+            <header>
+                {% include header.html %}
+            </header>
+            {{ content }}
+        </div>
+        <footer class="footer">
+                {% if page.url != '/' %}<a href="{{page.url}}">permalink</a>{% endif %}
+                <span>&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> <a href="{{site.url}}">grote.world</a></span>
+        </footer>
+        {% include scripts.html %}
+    </body>
+</html>

@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="card-nav">
+<span class="prev">{% if page.previous %}<a  href="{{ page.previous.url }}">&larr;</a>{% endif %}</span>
+<date>{{ page.date | date: "%m/%d/%Y" }}</date>
+<span class="next">{% if page.next %}<a  href="{{ page.next.url }}">&rarr;</a>{% endif %}</span>
+</div>
+<div class="blog-card">
+<div class="card-title">
+    <span>{{ page.title }}</span>
+</div>
+<div class="card-content">
+    {{ page.content }}
+</div>
+</div>
+<div class="card-note">
+    {{ page.notes }}
+</div>

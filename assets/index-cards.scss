@@ -1,0 +1,228 @@
+---
+---
+
+@import url("https://fonts.googleapis.com/css?family=Fira+Code|Reenie+Beanie&display=swap");
+@import 'assets/normalize';
+@import 'assets/variables';
+
+body {
+  background: #5a4f6114;
+  position: relative;
+  min-height: 100vh;
+}
+
+.navigation {
+  height: 40px;
+  font-size: 3em;
+  font-family: "Reenie Beanie", cursive;
+  padding: 10px 20px;
+}
+
+a {
+  color: unset;
+}
+
+a:visited,
+a:link,
+a:active {
+  text-decoration: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+a:hover {
+  span {
+    font-weight: bolder;
+  }
+}
+
+.prev,
+.next {
+  font-size: 2em;
+  vertical-align: middle;
+  padding: 5px 20px 10px;
+  width: 60px;
+
+  &:hover {
+    color: #333;
+  }
+}
+
+.card-nav {
+  font-family: "Fira Code", monospace;
+  color: #888;
+  font-size: 0.8em;
+  height: 2.5em;
+  margin: 30px auto 30px;
+  text-align: center;
+  width: 300px;
+
+  * {
+    display: inline-block;
+  }
+}
+
+.blog-card {
+  background: white;
+  min-height: 23rem;
+  margin: 0 auto 40px;
+  font-family: "Reenie Beanie", cursive;
+  // https://codepen.io/teddyzetterlund/pen/YPjEzP
+  background-image: linear-gradient(
+      180deg,
+      white 3rem,
+      #f0a4a4 calc(3rem),
+      #f0a4a4 calc(3rem + 2px),
+      transparent 1px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 1.47rem,
+      #ddd 1px,
+      #ddd calc(1.47rem + 1px)
+    );
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.33);
+}
+
+.card-title {
+  height: calc(3rem);
+  font-size: 1.8em;
+  line-height: 1em;
+  text-align: center;
+  white-space: normal;
+  display: table;
+  width: 100%;
+
+  span {
+    padding: 0 12px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.card-content {
+  // height: 20rem;
+  // width: 552px;
+  padding: 0 12px 18px;
+  top: 0;
+  font-size: 1.3em;
+  color: #333;
+
+  pre {
+    font-family: "Fira Code", monospace;
+    background: #fafafa;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    font-size: 8px;
+    color: black;
+  }
+
+  code {
+    font-family: "Fira Code", monospace;
+  }
+
+  img {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: #fafafa;
+    width: 100%;
+    transition: ease .75s
+  }
+
+  .big-title {
+    font-size: 1.35em;
+  }
+}
+
+.card-content, .card-note {
+  a {
+    color: rgb(28, 31, 221);
+  }
+
+  a:visited,
+  a:link,
+  a:active {
+    text-decoration: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+
+  a:hover {
+    text-decoration: underline !important;
+    -webkit-box-shadow: underline !important;
+    box-shadow: underline !important;
+  }
+}
+
+.card-note {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 0px 20px 40px;
+
+  transform: rotate(0deg);
+  font-size: 1.7em;
+  font-family: "Reenie Beanie", cursive;
+  padding-bottom: 40px;
+}
+
+.footer {
+  font-family: "Fira Code", monospace;
+  font-size: 0.8em;
+  color: #888;
+  bottom: 0px;
+  right: 0px;
+  padding: 5px;
+  position: absolute;
+
+  a:hover {
+    color: #333;
+    font-weight: bolder;
+  }
+}
+
+@media (min-width: 618px) {
+  .card-nav {
+    width: 576px;
+  }
+  .blog-card {
+    width: 576px;
+  }
+  .card-content {
+    width: 552px;
+    pre {
+      font-size: 12px;
+    }
+
+    img {
+      padding: 10px 10px 40px;
+      width: calc(100% - 22px);
+    }
+  }
+  .card-note {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .card-content {
+    pre {
+      font-size: 12.5px;
+    }
+
+    img {
+      transform: translateX(-40%) rotate(4deg);
+      box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+  .card-note {
+    position: absolute;
+    width: 250px;
+    top: 180px;
+    margin: 0;
+    left: calc(50% + 310px);
+    transform: rotate(-3deg);
+    padding: 0;
+  }
+}
