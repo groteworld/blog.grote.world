@@ -31,7 +31,6 @@ url: "https://blog.grote.world" # the base hostname & protocol for your site, e.
 twitter_username: groteworld
 github_username:  groteworld
 permalink: /:title:output_ext
-paginate: 5
 
 sass:
   sass_dir: _sass
