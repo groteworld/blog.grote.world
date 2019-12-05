@@ -164,12 +164,6 @@ a:hover {
   font-size: 1.7em;
   font-family: "Reenie Beanie", cursive;
   padding-bottom: 40px;
-
-  -webkit-animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  -ms-animation: fadein 2s;
-  -o-animation: fadein 2s;
-  animation: fadein 2s;
 }
 
 .footer {
@@ -229,6 +223,12 @@ a:hover {
     left: calc(50% + 310px);
     transform: rotate(-3deg);
     padding: 0;
+
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -ms-animation: fadein 2s;
+    -o-animation: fadein 2s;
+    animation: fadein 2s;
   }
 }
 
